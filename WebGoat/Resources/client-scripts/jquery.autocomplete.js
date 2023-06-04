@@ -286,6 +286,9 @@
       var response;
       try {
         response = eval('(' + text + ')');
+        //
+        // Another eval
+        response = eval('(' + text+"something different" + ')');
       } catch (err) { return; }
       if (!$.isArray(response.data)) { response.data = []; }
       if(!this.options.noCache){
