@@ -2,11 +2,7 @@ name: boostsecurity.io
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
     types:
       - opened
       - synchronize
