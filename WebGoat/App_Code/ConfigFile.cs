@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
+
 namespace OWASP.WebGoat.NET.App_Code
 {
     public class ConfigFile
