@@ -20,8 +20,8 @@ jobs:
       - name: Run Native Scanner
         uses: boostsecurityio/boostsec-scanner-github@v4
         env:
-#           SEMGREP_RULES: https://gitlab.com/gitlab-org/security-products/sast-rules/-/raw/main/dist/security_code_scan.yml
-          SEMGREP_RULES: p/csharp
+          SEMGREP_RULES: https://gitlab.com/gitlab-org/security-products/sast-rules/-/raw/main/dist/security_code_scan.yml
+#           SEMGREP_RULES: p/csharp
         with:
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           registry_module: boostsecurityio/semgrep
